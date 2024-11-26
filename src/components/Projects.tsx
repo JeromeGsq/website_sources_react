@@ -87,7 +87,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-16"
+          className="text-4xl font-bold mb-16"
         >
           Projets
         </motion.h2>
@@ -99,7 +99,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group"
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group"
             >
               <img
                 src={project.image}

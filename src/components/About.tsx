@@ -91,7 +91,7 @@ export default function About() {
             <img
               src="/assets/avatar.jpeg"
               alt="Jérôme Ghesquière"
-              className="w-96 object-cover shadow-xl"
+              className="w-96 rounded-lg object-cover shadow-lg hover:shadow-xl transition-shadow"
             />
           </motion.div>
         </div>
