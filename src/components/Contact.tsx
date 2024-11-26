@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, FileText, Github, Linkedin } from 'lucide-react';
+import { FaEnvelope, FaFilePdf, FaGithub, FaLinkedin, FaBluesky, FaMapLocationDot} from "react-icons/fa6";
 
 export default function Contact() {
   return (
@@ -18,38 +17,35 @@ export default function Contact() {
               <h3 className="text-2xl font-semibold mb-6">Informations</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-gray-600" />
+                  <FaEnvelope className="w-5 h-5 text-gray-600" />
                   <a href="mailto:jerome.ghesquiere@gmail.com" className="hover:text-gray-600">
                     jerome.ghesquiere@gmail.com
-                  </a>
+                  </a> 
                 </div>
                 <div className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-gray-600" />
+                  <FaMapLocationDot className="w-5 h-5 text-gray-600" />
                   <span>Lille, 59000</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <FileText className="w-5 h-5 text-gray-600" />
+                  <FaFilePdf className="w-5 h-5 text-gray-600" />
                   <a href="#" className="hover:text-gray-600">
                     Télécharger mon CV (PDF)
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Github className="w-5 h-5 text-gray-600" />
+                  <FaGithub className="w-5 h-5 text-gray-600" />
                   <a href="https://github.com/jeromegsq" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">
                     github.com/jeromegsq
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Linkedin className="w-5 h-5 text-gray-600" />
+                  <FaLinkedin className="w-5 h-5 text-gray-600" />
                   <a href="https://linkedin.com/in/jeromegsq" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">
                     linkedin.com/in/jeromegsq
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                    <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
-                  </svg>
+                  <FaBluesky className="w-5 h-5 text-gray-600" />
                   <a href="https://bsky.app/profile/jeromegsq.bsky.social" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">
                     @jeromegsq.bsky.social
                   </a>

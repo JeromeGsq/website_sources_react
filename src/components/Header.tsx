@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
 export default function Header() {
   return (
@@ -27,13 +26,13 @@ export default function Header() {
           </div>
           <div className="flex gap-4">
             <a href="https://github.com/jeromegsq" target="_blank" rel="noopener noreferrer">
-              <Github className="w-5 h-5 hover:text-gray-600 transition-colors" />
+              <FaGithub className="w-5 h-5 hover:text-gray-600 transition-colors" />
             </a>
             <a href="https://linkedin.com/in/jeromegsq" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-5 h-5 hover:text-gray-600 transition-colors" />
+              <FaLinkedin className="w-5 h-5 hover:text-gray-600 transition-colors" />
             </a>
             <a href="mailto:contact@jeromegsq.com">
-              <Mail className="w-5 h-5 hover:text-gray-600 transition-colors" />
+              <FaEnvelope className="w-5 h-5 hover:text-gray-600 transition-colors" />
             </a>
           </div>
         </div>

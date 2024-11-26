@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';     
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -58,7 +57,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 bg-white text-gray-900 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors"
             >
               Voir mes réalisations
-              <ArrowRight className="w-4 h-4" />
+              <FaArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
         </motion.div>

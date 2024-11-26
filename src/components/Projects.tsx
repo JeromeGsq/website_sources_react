@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { FaGithub, FaLink } from "react-icons/fa6";
 
 const projects = [
   {
@@ -76,7 +75,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-1 text-gray-600 hover:text-gray-800 transition-colors"
                   >
-                    <Github className="w-4 h-4" />
+                    <FaGithub className="w-4 h-4" />
                     Github
                   </a>
                   <a 
@@ -85,7 +84,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-1 text-gray-600 hover:text-gray-800 transition-colors"
                   >
-                    <ExternalLink className="w-4 h-4" />
+                    <FaLink className="w-4 h-4" />
                     En savoir plus
                   </a>
                 </div>
