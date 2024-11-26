@@ -9,7 +9,7 @@ export default function Hero() {
         <video
           autoPlay
           loop
-          muted
+          muted 
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
@@ -23,7 +23,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ export default function Hero() {
           className="max-w-3xl mx-auto text-center text-white"
         >
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -39,7 +39,7 @@ export default function Hero() {
             Lead Développeur Mobile
           </motion.h1>
           <motion.p 
-            className="text-xl mb-8"
+            className="text-lg sm:text-xl mb-6 sm:mb-8 px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -51,13 +51,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
+            className="px-4 sm:px-0"
           >
             <a 
               href="#projects"
-              className="inline-flex items-center gap-2 bg-white text-gray-900 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center gap-2 bg-white text-gray-900 px-6 sm:px-8 py-2.5 sm:py-3 rounded-full hover:bg-gray-100 transition-colors text-sm sm:text-base"
             >
               Voir mes réalisations
-              <FaArrowRight className="w-4 h-4" />
+              <FaArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
             </a>
           </motion.div>
         </motion.div>
