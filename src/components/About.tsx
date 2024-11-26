@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { useEffect, useRef } from 'react';
+import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export default function About() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -11,22 +11,22 @@ export default function About() {
   }, []);
 
   return (
-    <section id='about' className='relative min-h-screen overflow-hidden'>
+    <section id="about" className="relative min-h-screen overflow-hidden">
       {/* Background */}
-      <div className='absolute inset-0 bg-white-900/95'></div>
+      <div className="absolute inset-0 bg-white-900/95"></div>
 
       {/* Content */}
-      <div className='relative z-10 container mx-auto px-6 py-24 min-h-screen flex items-center'>
-        <div className='flex flex-col md:flex-row items-start gap-12'>
+      <div className="relative z-10 container mx-auto px-6 py-24 min-h-screen flex items-center">
+        <div className="flex flex-col md:flex-row items-start gap-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
-            className='max-w-3xl text-gray'
+            className="max-w-3xl text-gray"
           >
-            <h2 className='text-4xl font-bold mb-8'>À propos</h2>
-            <div className='space-y-4 text-lg'>
+            <h2 className="text-4xl font-bold mb-8">À propos</h2>
+            <div className="space-y-4 text-lg">
               <p>
                 Je suis Jérôme Ghesquière, développeur expérimenté spécialisé
                 dans le développement d'applications mobiles Flutter et Unity.
@@ -53,29 +53,29 @@ export default function About() {
               </p>
             </div>
 
-            <div className='mt-12 grid grid-cols-2 md:grid-cols-4 gap-6'>
-              <div className='bg-white/10 p-4 rounded-lg backdrop-blur-sm'>
-                <h3 className='font-bold mb-2'>Mobile</h3>
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="font-bold mb-2">Mobile</h3>
                 <p>Flutter, Dart, iOS, Android</p>
               </div>
-              <div className='bg-white/10 p-4 rounded-lg backdrop-blur-sm'>
-                <h3 className='font-bold mb-2'>Web</h3>
+              <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="font-bold mb-2">Web</h3>
                 <p>Vue, Typescript, Nuxt, TailwindCSS</p>
               </div>
-              <div className='bg-white/10 p-4 rounded-lg backdrop-blur-sm'>
-                <h3 className='font-bold mb-2'>VR/AR</h3>
+              <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="font-bold mb-2">VR/AR</h3>
                 <p>Unity, C#, AR/VR, Animation</p>
               </div>
-              <div className='bg-white/10 p-4 rounded-lg backdrop-blur-sm'>
-                <h3 className='font-bold mb-2'>Design</h3>
+              <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="font-bold mb-2">Design</h3>
                 <p>Figma, UX/UI, Zeplin</p>
               </div>
-              <div className='bg-white/10 p-4 rounded-lg backdrop-blur-sm'>
-                <h3 className='font-bold mb-2'>DevOps</h3>
+              <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="font-bold mb-2">DevOps</h3>
                 <p>Azure, Github, GitLab, CI/CD</p>
               </div>
-              <div className='bg-white/10 p-4 rounded-lg backdrop-blur-sm'>
-                <h3 className='font-bold mb-2'>OS</h3>
+              <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="font-bold mb-2">OS</h3>
                 <p>macOS, Windows, Linux</p>
               </div>
             </div>
@@ -84,14 +84,14 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
-            className='hidden md:block py-20'
+            className="hidden md:block py-20"
           >
             <img
-              src='/assets/avatar.jpeg'
-              alt='Jérôme Ghesquière'
-              className='w-96 object-cover shadow-xl'
+              src="/assets/avatar.jpeg"
+              alt="Jérôme Ghesquière"
+              className="w-96 object-cover shadow-xl"
             />
           </motion.div>
         </div>
