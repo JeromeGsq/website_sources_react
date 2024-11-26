@@ -35,7 +35,7 @@ const projects = [
     align: "object-[0px,-30px]",
   },
   {
-    title: "Mon coup de pouce - Mobile",
+    title: "Coup de pouce - Mobile",
     client: "Floa Bank",
     description:
       "Demandez un mini prêt, étalez vos achats en 4x ou visualisez vos échéanciers en 1 clin d'œil, c'est simple grâce à l'Appli FLOA ! Grâce à ce mini crédit, vous financez vos envies du moment ou les imprévus.",
@@ -89,7 +89,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-4xl font-bold mb-16"
         >
-          Projets
+          . Projets
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

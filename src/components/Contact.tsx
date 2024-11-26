@@ -17,7 +17,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="mx-auto"
         >
-          <h2 className="text-4xl font-bold mb-16">Contact</h2>
+          <h2 className="text-4xl font-bold mb-16">. Contact</h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-semibold mb-6">Informations</h3>
