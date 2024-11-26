@@ -8,9 +8,9 @@ const projects = [
     description:
       'Visualisez en temps réel la situation parasitaire observée par les autres utilisateurs proches de votre exploitation. Vous obtenez une information précise et locale.',
     image:
-      'https://play-lh.googleusercontent.com/wRuA1Ae1QRKgpClRq0KG1WTAGzC5nk1zroF7DPjqFkwTDiXvJJgQkYPrw-1aeMmbBg=w5120-h2880-rw',
+      'https://smag.tech/wp-content/uploads/2023/07/MicrosoftTeams-image-143.jpg',
     tech: ['Flutter', 'iOS', 'Android', 'Freelance'],
-    live: 'https://yourmonaco.mc/',
+    live: 'https://smag.tech/application-companion-by-smag/',
     align: 'object-[0px,0px]',
 
   },
@@ -76,7 +76,7 @@ const projects = [
     image:
       'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/648340/ss_df8e933611803a7b04634108eb2392f8a2c911c5.1920x1080.jpg?t=1582821311',
     tech: ['Unity', 'iOS', 'Android', 'Windows', 'macOS', 'Steam'],
-    live: 'https://www.wankil.fr/',
+    live: 'https://store.steampowered.com/app/648340/Harald_A_Game_of_Influence/',
     align: 'object-[0px,-0px]',
   },
 ];

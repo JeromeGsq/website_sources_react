@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa6';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ export default function Header() {
     >
       <nav className='container mx-auto px-6 py-4'>
         <div className='flex justify-between items-center'>
-          <div className='flex items-center gap-2'>
+          <div className='flex items-center gap-2 '>
             <a href='/' className='flex items-center gap-2'>
               <img
                 src='/assets/jeromegsq_avatar_transparent.png'
@@ -27,7 +27,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className='hidden md:flex items-center gap-6'>
+          <div className='hidden md:flex items-center gap-6 flex-1 justify-center'>
             <a href='#about' className='hover:text-gray-600 transition-colors'>
               À propos
             </a>
@@ -70,21 +70,21 @@ export default function Header() {
           <button
             className='md:hidden'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <div className='space-y-2'>
+          > 
+            <div className='space-y-1.5'>
               <span
-                className={`block w-8 h-0.5 bg-gray-600 transition-transform ${
-                  isMenuOpen ? 'rotate-45 translate-y-2.5' : ''
+                className={`block w-6 h-0.5 bg-gray-900 transition-transform ${
+                  isMenuOpen ? 'rotate-45 translate-y-2' : ''
                 }`}
               ></span>
               <span
-                className={`block w-8 h-0.5 bg-gray-600 ${
+                className={`block w-6 h-0.5 bg-gray-900 ${
                   isMenuOpen ? 'opacity-0' : ''
                 }`}
               ></span>
               <span
-                className={`block w-8 h-0.5 bg-gray-600 transition-transform ${
-                  isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''
+                className={`block w-6 h-0.5 bg-gray-900 transition-transform ${
+                  isMenuOpen ? '-rotate-45 -translate-y-2' : ''
                 }`}
               ></span>
             </div>

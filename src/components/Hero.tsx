@@ -27,9 +27,9 @@ export default function Hero() {
         </video> 
         {/* Overlay */}
         <motion.div 
-          className='absolute inset-0'
-          initial={{ backgroundColor: 'rgba(60, 128, 128, 1)' }}
-          animate={{ backgroundColor: 'rgba(60, 128, 128, 0.7)' }}
+          className='absolute inset-0 bg-gradient-to-b from-teal-200/90 to-teal-900/70'
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 0.8 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         ></motion.div>
       </div>
