@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   useEffect(() => {
     if (videoRef.current) {
@@ -22,6 +23,7 @@ export default function Hero() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          onLoadedData={() => setIsVideoLoaded(true)}
         >
           <source src="/assets/background2.mp4" type="video/mp4" />
         </video>
@@ -29,7 +31,7 @@ export default function Hero() {
         <motion.div
           className="absolute inset-0 bg-gradient-to-b from-teal-200/90 to-teal-900/70"
           initial={{ opacity: 1 }}
-          animate={{ opacity: 0.8 }}
+          animate={isVideoLoaded ? { opacity: 0.8 } : { opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         ></motion.div>
       </div>
