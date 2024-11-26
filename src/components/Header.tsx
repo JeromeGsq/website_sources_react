@@ -16,7 +16,7 @@ export default function Header() {
           <div className="flex items-center gap-2 ">
             <a href="/" className="flex items-center gap-2">
               <img
-                src="public/assets/jeromegsq_avatar_transparent.png"
+                src="/assets/jeromegsq_avatar_transparent.png"
                 alt="Logo"
                 className="h-11"
               />

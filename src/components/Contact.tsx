@@ -35,7 +35,7 @@ export default function Contact() {
                   <div className="flex items-center gap-3">
                     <FaFilePdf className="w-5 h-5 text-gray-600" />
                     <a
-                      href="public/assets/jerome_ghesquiere.pdf"
+                      href="/assets/jerome_ghesquiere.pdf"
                       download="jerome_ghesquiere.pdf"
                       className="hover:text-gray-600"
                     >

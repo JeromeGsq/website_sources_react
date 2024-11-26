@@ -89,7 +89,7 @@ export default function About() {
             className="hidden md:block py-20"
           >
             <img
-              src="public/assets/avatar.jpeg"
+              src="/assets/avatar.jpeg"
               alt="Jérôme Ghesquière"
               className="w-96 object-cover shadow-xl"
             />
