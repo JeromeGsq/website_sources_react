@@ -22,6 +22,7 @@
       ul { padding-left: 1.25rem; }
       code { background: #f3f3f3; padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.9em; }
       footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #eee; font-size: 0.9rem; color: #666; }
+      .nav { font-size: 0.95rem; margin-bottom: 1.5rem; }
       @media (prefers-color-scheme: dark) {
         body { color: #e6e6e6; background: #111; }
         code { background: #222; }
@@ -30,14 +31,18 @@
     </style>
   </head>
   <body>
+    <p class="nav">
+      <a href="/petits-pieds/rgpd/">Mentions RGPD</a>
+    </p>
+
     <h1>Politique de confidentialité — Petits Pieds</h1>
-    <p class="meta">Dernière mise à jour : 9 mai 2026</p>
+    <p class="meta">Dernière mise à jour : 9 mai 2026 — applicable aux versions Android et iOS.</p>
 
     <p>
       Petits Pieds est une application mobile destinée aux parents et à leurs enfants,
       proposant des comptines et des sons d'ambiance pour favoriser l'éveil et le sommeil.
       Cette politique explique de manière simple quelles données sont (ou ne sont pas) traitées
-      par l'application.
+      par l'application, sur Android comme sur iOS.
     </p>
 
     <h2>1. Données collectées</h2>
@@ -48,31 +53,58 @@
       <li>ne demande pas de création de compte ;</li>
       <li>n'envoie aucune information à un serveur appartenant à l'éditeur ;</li>
       <li>n'utilise pas d'outils d'analyse (analytics) ni d'outils de suivi (tracking) ;</li>
-      <li>n'affiche aucune publicité.</li>
+      <li>n'affiche aucune publicité ;</li>
+      <li>n'utilise aucun identifiant publicitaire (AAID Android, IDFA iOS).</li>
     </ul>
+    <p>
+      Sur iOS, l'application n'effectue aucun suivi entre applications et n'affiche donc pas
+      la fenêtre de demande <em>App Tracking Transparency</em>.
+    </p>
 
     <h2>2. Données stockées localement</h2>
     <p>
-      L'application enregistre certaines préférences (volume, dernier contenu écouté, réglages)
-      uniquement sur le téléphone via le mécanisme standard <code>SharedPreferences</code> d'Android.
+      L'application enregistre certaines préférences (volume, dernier contenu écouté, réglages,
+      rappels) uniquement sur l'appareil :
+    </p>
+    <ul>
+      <li>via <code>SharedPreferences</code> sur Android ;</li>
+      <li>via <code>NSUserDefaults</code> sur iOS.</li>
+    </ul>
+    <p>
       Ces données ne quittent jamais l'appareil et sont supprimées automatiquement à la
       désinstallation de l'application.
     </p>
 
-    <h2>3. Permissions Android demandées</h2>
+    <h2>3. Permissions demandées</h2>
+
+    <h3>Android</h3>
     <ul>
       <li>
-        <strong>Internet</strong> : utilisée pour la lecture de contenus vidéo intégrés via
-        YouTube et l'envoi de notifications locales programmées.
+        <strong>Internet</strong> : lecture de contenus vidéo intégrés via YouTube et envoi
+        de notifications locales programmées.
       </li>
       <li>
         <strong>Notifications</strong> : pour signaler à l'utilisateur des rappels qu'il a
-        lui-même configurés. Aucune notification publicitaire n'est envoyée.
+        lui-même configurés.
       </li>
     </ul>
+
+    <h3>iOS</h3>
+    <ul>
+      <li>
+        <strong>Accès réseau</strong> : implicite, utilisé pour la lecture de contenus vidéo
+        YouTube intégrés.
+      </li>
+      <li>
+        <strong>Notifications locales</strong> : sur demande explicite de l'utilisateur lors
+        de la configuration de rappels.
+      </li>
+    </ul>
+
     <p>
-      L'application ne demande pas l'accès à la caméra, au microphone, à la localisation,
-      aux contacts, aux fichiers personnels ou à toute autre donnée sensible.
+      Aucune des deux plateformes ne donne accès à la caméra, au microphone, à la localisation,
+      aux contacts, à la photothèque, à la bibliothèque musicale ou à toute autre donnée
+      sensible.
     </p>
 
     <h2>4. Services tiers</h2>
@@ -82,13 +114,18 @@
       Petits Pieds n'a accès à aucune de ces informations. Voir
       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
     </p>
+    <p>
+      Aucun autre SDK tiers (analytics, crash reporting, publicité, attribution, etc.) n'est
+      intégré dans l'application.
+    </p>
 
     <h2>5. Public cible et enfants</h2>
     <p>
       L'application est conçue pour être utilisée par des enfants accompagnés de leurs parents.
       Aucune donnée n'étant collectée, l'application est conforme aux principes du
-      <strong>RGPD-K</strong> (Europe) et du <strong>COPPA</strong> (États-Unis) relatifs à la
-      protection des données des mineurs. Aucune publicité personnalisée n'est diffusée.
+      <strong>RGPD</strong> (Europe), du <strong>RGPD-K</strong> pour la protection des
+      mineurs et du <strong>COPPA</strong> (États-Unis). Aucune publicité personnalisée n'est
+      diffusée.
     </p>
 
     <h2>6. Sécurité</h2>
@@ -105,8 +142,14 @@
 
     <h2>8. Contact</h2>
     <p>
-      Pour toute question concernant cette politique :
+      Pour toute question relative à cette politique :
       <a href="mailto:contact@jeromegsq.com">contact@jeromegsq.com</a>.
+    </p>
+
+    <p>
+      Pour vos droits au titre du RGPD (accès, rectification, suppression, opposition,
+      portabilité), voir la page dédiée :
+      <a href="/petits-pieds/rgpd/">Mentions RGPD</a>.
     </p>
 
     <footer>
